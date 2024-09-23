@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Warner Madrid - Nuestro Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Felices 3 años!</h1>
+        <p>Mi amor, nos vamos al Parque Warner de Madrid?.</p>
+    </header>
+
+    <main>
+        <section id="calendar-section">
+            <h2>Elige una fecha para nuestra visita</h2>
+            <input type="date" id="visit-date" min="2023-10-01" max="2023-11-30">
+        </section>
+    </main>
+
+    <footer>
+        <p>Te amo muchisimo.</p>
+    </footer>
+
+    <script>
+        const dateInput = document.getElementById('visit-date');
+        dateInput.addEventListener('change', (event) => {
+            alert('¡La fecha que elegiste es: ' + event.target.value + '!');
+        });
+    </script>
+</body>
+</html>
